@@ -1,0 +1,72 @@
+import Navbar from '../Components/Navbar.jsx'
+import { coursesList,BlogList,ReasonsList } from './Data/Homepage-displayData.js'
+
+
+function Homepage() {
+
+  
+  return (
+    <>
+        <Navbar />
+        <section className="main-section">
+          <h1 className="text-primary">Welcome to LearnHub</h1>
+          <p className="fs-5">Your journey to learning starts here!</p>
+        </section>
+
+        <section className="whyLearnhub">
+          <h2 className="text-center text-primary">Why LearnHub ?</h2>
+          <div className="Reasonstoconnect">
+              {
+                 ReasonsList.map((reason)=>{
+                  return (
+                     <div className="Reason-container">
+                      <div>
+                        <img src={reason.logo} alt="logo" />
+                     </div>
+                      <h4>{reason.why}</h4>
+                     </div>
+                  )
+                 })
+              }
+          </div>
+        </section>
+        <section className="courses-section">
+          <h2 className="text-primary">Explore Our Courses</h2>
+          <div className="courses-container d-flex justify-content-around">
+          {coursesList.map((course)=>{
+               return (
+                <div className="course-card">
+              <img src={course.imagesrc} alt="Web Development" />
+              <h3>{course.title}</h3>
+              <p>{course.description}</p>
+              <button className="btn btn-primary p-2 mt-2">View Details</button>
+            </div>
+               )
+          })}
+            
+          </div>
+        </section>
+
+        <section className="Our-Blogs">
+            <h2 className="text-primary text-center">Our Blogs</h2>
+           <div className="Blog-container mt-5 justify-content-around">
+              {
+                BlogList.map((Blog)=>{
+                  return (
+                    <div className="Blog-card mt-4">
+              <img src={Blog.blogimg} alt="Blogimage" />
+              <h5>{Blog.uploaddate}</h5>
+              <h3>{Blog.blogtitle}</h3>
+              <p>{Blog.blogdescription}</p>
+              <button className="btn btn-primary p-2 mt-2">Read More</button>
+            </div>
+                  )
+                })
+              }
+           </div>
+        </section>
+    </>
+  )
+}
+
+export default Homepage
