@@ -3,12 +3,9 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-light p-1">
-  <div className="d-flex justify-content-between container-fluid">
-    <div>
+  <div className="nav-container container-fluid">
     <img src={logo} alt="LearnHub Logo" className="navbar-brand logo me-3"/>  
-    <a className="navbar-brand" className="text-primary title text-decoration-none  fw-bold" href="#">LearnHub</a>
-    </div>
-    <div>
+    <a className="navbar-brand text-primary title text-decoration-none  fw-bold" href="#">LearnHub</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -31,17 +28,16 @@ const Navbar = () => {
         </li>
         
       </ul>
-      <ul className="navbar-nav me-auto gap-4 mb-2 mb-lg-0">
+      <ul className="navbar-nav nav-btns me-auto gap-4 mb-2 mb-lg-0">
         <li className="nav-item">
-          <button className="btn btn-primary" type="submit">Login</button>
+          <button className="btn btn-primary login-btn" type="submit">Login</button>
         </li>
         <li className="nav-item">
-          <button className="btn btn-primary" type="submit">Register</button>
+          <button className="btn btn-primary register-btn" type="submit">Register</button>
         </li>
       </ul>
       </div>
     </div>
-  </div>
 </nav>
     </>
   )

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Navbar from '../Components/Navbar.jsx'
 import { coursesList,BlogList,ReasonsList } from './Data/Homepage-displayData.js'
 
@@ -72,11 +73,44 @@ function Homepage() {
           <button className="btn btn-primary p-2 ms-1">Submit</button>
         </section>
 
-        <footer>
-          <div>
+        <footer className="d-flex flex-column">
+        <section className="container">
+          <div className="row">
+            <div className="col">
             <h3 className="text-primary">LearnHub</h3>
-            <p className="text-light mt-1 w-25">LearnHub is an online learning platform which offers various courses for Students.</p>
-          </div>
+            <p className="text-light mt-1 w-75">LearnHub is an online learning platform which offers various courses for Students. It is designed to help learners build in demand skills through structured courses.</p>
+            </div>
+            <div className="col">
+              <h4 className="text-light">Explore</h4>
+              <ul className="list-unstyled mt-2">
+                <li>
+                   <Link to="#" className="text-light text-decoration-none">About</Link>
+                </li>
+                <li>
+                   <Link to="#" className="text-light text-decoration-none">Courses</Link>
+                </li>
+                <li>
+                   <Link to="#" className="text-light text-decoration-none">Blogs</Link>
+                </li>
+                <li>
+                   <Link to="#" className="text-light text-decoration-none">Courses</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="col">
+              <h4 className="text-light">Our Terms</h4>
+              <ul className="list-unstyled mt-2">
+                <li>
+                   <Link to="#" className="text-light text-decoration-none">Our policy</Link>
+                </li>
+                <li>
+                   <Link to="#" className="text-light text-decoration-none">Terms & conditions</Link>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </section>
+          <p className="text-light text-center copyright">LearnHub ©2026 All Rights Reserved</p>
         </footer>
     </>
   )

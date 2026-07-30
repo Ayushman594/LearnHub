@@ -13,20 +13,26 @@
 .Reasonstoconnect{
     display:grid;
     height:70vh;
-    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-columns: 10vw 10vw 10vw 10vw;
     justify-content:space-around;
-    padding-top: 30px !important;
+    padding-top: 120px !important;
     padding-bottom:30px !important;
 }
+.nav-container{
+    display:flex !important;
+}
 .title{
-    padding-top: 55px !important;
     font-size:25px !important;
+}
+.navbar .nav-links{
+   justify-self: flex-end !important;
 }
 .navbar .btn{
     padding:5px 15px !important;
     font-weight:600;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .main-section{
     background-image:url("Images/Backgroundimage.png");
     background-size:cover;
@@ -129,4 +135,17 @@ footer{
     height:50vh;
     background-color: black;
     padding:20px !important;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:480px){
+    .navbar ul{
+        margin-left: 20px !important;
+    }
+    .navbar .login-btn{
+        margin-top: 10px !important;
+    }
+    .register-btn{
+        margin-bottom: 10px !important;
+    }
 }

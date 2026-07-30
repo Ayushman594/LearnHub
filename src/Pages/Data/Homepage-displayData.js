@@ -2,9 +2,6 @@ export const ReasonsList=[{
     logo:"src/Images/IndustryExpert.png",
     why:"Learn from Industry Experts",
 },{
-  logo:"src/Images/securitybadge.png",
-  why:"Get Premium access to learning materials"
-},{
   logo:"src/Images/HandsonProjects.png",
   why:"Hands On projects"
 },{
