@@ -65,6 +65,19 @@ function Homepage() {
               }
            </div>
         </section>
+        <section className="Newsletter">
+           <h3 className="fs-2 text-primary"> Newsletter</h3>
+          <p className="pb-2 pt-2">Get latest updates of LearnHub</p>
+          <input type="email" className="rounded p-2 d-inline form-control w-25" placeholder='Enter your Email' />
+          <button className="btn btn-primary p-2 ms-1">Submit</button>
+        </section>
+
+        <footer>
+          <div>
+            <h3 className="text-primary">LearnHub</h3>
+            <p className="text-light mt-1 w-25">LearnHub is an online learning platform which offers various courses for Students.</p>
+          </div>
+        </footer>
     </>
   )
 }

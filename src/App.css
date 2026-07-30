@@ -14,8 +14,9 @@
     display:grid;
     height:70vh;
     grid-template-columns: 10vw 10vw 10vw;
-    justify-content:space-between;
-    padding-top: 20px;
+    justify-content:space-around;
+    padding-top: 30px !important;
+    padding-bottom:30px !important;
 }
 .title{
     padding-top: 55px !important;
@@ -43,12 +44,19 @@
     margin-right:25px !important;
 }
 .courses-section{
-    padding:50px !important;
+    padding:100px !important;
     height:90vh;
+    margin-top:20px;
     text-align:center;
 }
 .courses-container{
     margin-top:60px !important;
+}
+.Newsletter{
+    padding:25px !important;
+    padding-bottom:25vh !important;
+    height:25vh;
+    background-color: rgb(231, 229, 229);
 }
 .course-card{
     width:300px;
@@ -72,7 +80,7 @@
     grid-template-columns: 30vw 30vw;
 } 
 .Blog-card{
-    width:30vw;
+    width:25vw;
     border-radius: 12px;
     height:fit-content;
     padding-bottom: 20px !important;
@@ -81,7 +89,7 @@
     padding-left: 10px !important;
     padding-right: 10px !important;
 }
-.Blog-card p{
+p{
     text-align: justify;
 }
 .Blog-card h5{
@@ -107,11 +115,18 @@
 }
 .whyLearnhub{
    height:70vh;
-   padding:20px !important;
+   padding-top:30px !important;
 }
 .Blog-container{
     height:140vh;
 }
 .Our-Blogs{
     height:150vh;
+    padding-bottom: 170vh !important;
+}
+    
+footer{
+    height:50vh;
+    background-color: black;
+    padding:20px !important;
 }
