@@ -6,6 +6,12 @@
    width:64px;
    height:55px;
 }
+.navbar{
+    position:fixed;
+    width:100%;
+    background-color:white;
+    top:0;
+}
 .Reason-container img{
     width:105px;
     height: 105px;
@@ -19,13 +25,19 @@
     padding-bottom:30px !important;
 }
 .nav-container{
-    display:flex !important;
+    position:relative;
 }
 .title{
     font-size:25px !important;
 }
-.navbar .nav-links{
-   justify-self: flex-end !important;
+.nav-btns{
+   position:absolute;
+   right:0;
+   margin-right:10px !important;
+}
+.nav-links{
+    position:absolute;
+    right:13vw;
 }
 .navbar .btn{
     padding:5px 15px !important;
@@ -44,6 +56,7 @@
     flex-direction:column;
 }
 .navbar ul{
+    justify-self:end !important;
     margin-bottom: 3px !important;
 }
 .nav-links{
@@ -54,9 +67,11 @@
     height:90vh;
     margin-top:20px;
     text-align:center;
+    
 }
 .courses-container{
     margin-top:60px !important;
+    flex-wrap:wrap;
 }
 .Newsletter{
     padding:25px !important;
@@ -147,5 +162,46 @@ footer{
     }
     .register-btn{
         margin-bottom: 10px !important;
+    }
+    .nav-links{
+        position:relative;
+        left:0;
+        margin-right:50vw !important;
+        margin-top: 10px !important;
+    }
+    .nav-btns{
+        position:relative;
+        margin-right:56vw !important;
+    }
+    .main-section p{
+        font-size:16px !important;
+    }
+    .whyLearnhub{
+        height: 130vh !important;
+        padding-top:50px;
+    }
+    .Reasonstoconnect{
+        display:flex;
+        flex-direction: column !important;
+        height:90vh !important;
+        padding:0 !important;
+        align-items: center;
+    }
+    .Reason-container{
+        width:30vw;
+        margin-top: 20px !important;
+        margin-bottom: 40px !important;
+    }
+    .courses-section,.courses-container{
+        height:280vh !important;
+    }
+    .courses-container{
+        display:flex;
+        justify-content: center;
+        margin-top:5vh !important;
+    }
+    .course-card{
+        width:80vw !important;
+        height:60vh !important;
     }
 }
