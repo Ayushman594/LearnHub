@@ -199,9 +199,38 @@ footer{
         display:flex;
         justify-content: center;
         margin-top:5vh !important;
+        padding-bottom: 30vh !important;
+    }
+    .course-card button,.course-card p{
+        margin-top: 30px !important;
+    }
+    .course-card button{
+        height:40px;
+        overflow:hidden;
     }
     .course-card{
-        width:80vw !important;
-        height:60vh !important;
+        width:150vw !important;
+        height:65vh !important;
+    }
+    .Our-Blogs,.Blog-container{
+        height:380vh;
+    }
+    .Blog-container{
+        display:grid;
+        grid-template-columns: 60vw;
+    }
+    .Blog-card{
+        width:60vw;
+    }
+    .Newsletter input{
+        width:50vw !important;
+    }
+    footer{
+        height:fit-content;
+    }
+    footer>.container{
+        display:flex !important;
+        flex-direction: column !important;
+        height:80vh !important;
     }
 }
