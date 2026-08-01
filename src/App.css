@@ -155,7 +155,7 @@ footer{
 
 @media screen and (max-width:480px){
     .navbar ul{
-        margin-left: 20px !important;
+        margin-left: 10px !important;
     }
     .navbar .login-btn{
         margin-top: 10px !important;
@@ -166,12 +166,12 @@ footer{
     .nav-links{
         position:relative;
         left:0;
-        margin-right:50vw !important;
+        margin-right:75vw !important;
         margin-top: 10px !important;
     }
     .nav-btns{
         position:relative;
-        margin-right:56vw !important;
+        margin-right:80vw !important;
     }
     .main-section p{
         font-size:16px !important;
@@ -209,8 +209,8 @@ footer{
         overflow:hidden;
     }
     .course-card{
-        width:150vw !important;
-        height:65vh !important;
+        width:170vw !important;
+        height:fit-content !important;
     }
     .Our-Blogs,.Blog-container{
         height:380vh;
@@ -228,9 +228,85 @@ footer{
     footer{
         height:fit-content;
     }
-    footer>.container{
-        display:flex !important;
-        flex-direction: column !important;
-        height:80vh !important;
+    footer .row{
+        display:flex;
+        flex-direction: column;
+        height:fit-content;
+    }
+    footer .row .col{
+        margin-bottom: 20px !important;
+    }
+    .col ul li{
+        margin-bottom: 10px !important;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px){
+    .navbar ul{
+        margin-left: 10px !important;
+    }
+    .navbar .login-btn{
+        margin-top: 10px !important;
+    }
+    .register-btn{
+        margin-bottom: 10px !important;
+    }
+    .nav-links{
+        position:relative;
+        left:0;
+        margin-right:75vw !important;
+        margin-top: 10px !important;
+    }
+    .nav-btns{
+        position:relative;
+        margin-right:80vw !important;
+    }
+    .main-section p{
+        font-size:16px !important;
+    }
+    .whyLearnhub{
+        height: 130vh !important;
+        padding-top:50px;
+    }
+    .Reasonstoconnect{
+        display:grid;
+        grid-template-columns: 10vw 10vw;
+        justify-content:space-around;
+        height:90vh !important;
+        padding-right: 50px !important;
+        align-items: center;
+    }
+    .Reason-container{
+        width:30vw;
+        margin-top: 20px !important;
+        margin-bottom: 40px !important;
+    }
+    .courses-section,.courses-container{
+        height:280vh !important;
+    }
+    .courses-container{
+        display:flex;
+        justify-content: center;
+        margin-top:5vh !important;
+        padding-bottom: 30vh !important;
+    }
+    .course-card img{
+        margin-top: 20px !important;
+    }
+    .course-card button,.course-card p{
+        margin-top: 30px !important;
+    }
+    .course-card p,.course-card h3{
+        margin-top: 35px !important;
+    }
+    .course-card button{
+        margin-top:50px !important;
+        margin-bottom: 50px !important;
+        height:40px;
+        overflow:hidden;
+    }
+    .course-card{
+        width:50vw !important;
+        height:76vh !important;
     }
 }
