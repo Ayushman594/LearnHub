@@ -6,6 +6,58 @@
    width:64px;
    height:55px;
 }
+  .contact-section,.login-section,.registration-section{
+        display:flex;
+        justify-content:center;
+        height:fit-content !important;
+    }
+    .contact,.login,.registration{
+        width:32vw;
+        height:fit-content;
+        margin-top:13vh !important;
+        padding:20px !important;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+    .contact form,.login form,.registration form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        margin-top:20px !important;
+        width:28vw;
+    }
+    form input,form textarea{
+        padding:10px !important;
+        border-radius:5px;
+        border:1px solid #ccc;
+    }
+    form button{
+        width:100px;
+        height:40px;
+        border-radius:5px;
+        background-color:blue;
+        color:white;
+        font-weight:600;
+    }
+.about-section{
+    display:flex;
+    justify-content:center;
+    height:fit-content;
+    padding-top: 100px !important;
+}
+.about{
+    width:50vw;
+    height:fit-content;
+    padding:20px !important;
+    text-align:justify;
+}
+.about hr{
+    color:blue;
+    margin-top: 10px !important;
+}
+.about p{
+    margin-top: 20px !important;
+}
 .navbar{
     position:fixed;
     width:100%;
@@ -176,6 +228,21 @@ footer{
     .main-section p{
         font-size:16px !important;
     }
+    .contact,.login,.registration{
+        width:80vw;
+        height:fit-content;
+        margin-top:16vh !important;
+        padding:20px !important;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+    .contact form,.login form,.registration form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        margin-top:20px !important;
+        width:70vw;
+    }
     .whyLearnhub{
         height: 130vh !important;
         padding-top:50px;
@@ -211,6 +278,19 @@ footer{
     .course-card{
         width:170vw !important;
         height:fit-content !important;
+    }
+    .about{
+        width:80vw;
+        height:fit-content;
+        padding:20px !important;
+        text-align:justify;
+    }
+    .about img{
+        width:45px;
+        height:50px;
+    }
+    .about h2{
+        font-size:22px !important;
     }
     .Our-Blogs,.Blog-container{
         height:380vh;
@@ -262,7 +342,28 @@ footer{
         margin-right:78vw !important;
     }
     .main-section p{
-        font-size:16px !important;
+        font-size:20px !important;
+    }
+    .about{
+        width:60vw;
+        height:fit-content;
+        padding:20px !important;
+        text-align:justify;
+    }
+    .contact,.login,.registration{
+        width:60vw;
+        height:fit-content;
+        margin-top:16vh !important;
+        padding:20px !important;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+    .contact form,.login form,.registration form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        margin-top:20px !important;
+        width:50vw;
     }
     .whyLearnhub{
         height: 100vh !important;
@@ -290,7 +391,7 @@ footer{
         padding-bottom: 30vh !important;
     }
     .course-card img{
-        margin-top: 20px !important;
+        margin-top: 18px !important;
     }
     .course-card button,.course-card p{
         margin-top: 30px !important;
@@ -308,6 +409,7 @@ footer{
         width:50vw !important;
         height:76vh !important;
     }
+  
     .Our-Blogs,.Blog-container{
         height:380vh;
     }
@@ -360,7 +462,7 @@ footer{
         margin-right:84vw !important;
     }
     .main-section p{
-        font-size:16px !important;
+        font-size:20px !important;
     }
     .whyLearnhub{
         height: 100vh !important;
@@ -413,6 +515,27 @@ footer{
     }
     footer .row .col ul li{
         margin-bottom: 10px !important;
+    }
+    .contact,.login,.registration{
+        width:40vw;
+        height:fit-content;
+        margin-top:13vh !important;
+        padding:20px !important;
+        border:1px solid #ccc;
+        border-radius:5px;
+    }
+    .contact form,.login form,.registration form{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        margin-top:20px !important;
+        width:30vw;
+    }
+    form input,form textarea{
+        padding:10px !important;
+        border-radius:5px;
+        border:1px solid #ccc;
+        width:35vw !important;
     }
 }
 

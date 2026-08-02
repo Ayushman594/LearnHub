@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Navbar from '../Components/Navbar.jsx'
+
 import { coursesList,BlogList,ReasonsList } from './Data/Homepage-displayData.js'
 
 
@@ -84,16 +85,16 @@ function Homepage() {
               <h4 className="text-light">Explore</h4>
               <ul className="list-unstyled mt-2">
                 <li>
-                   <Link to="#" className="text-light text-decoration-none">About</Link>
+                   <Link to="/about" className="text-light text-decoration-none">About</Link>
                 </li>
                 <li>
-                   <Link to="#" className="text-light text-decoration-none">Courses</Link>
+                   <Link to="/courses" className="text-light text-decoration-none">Courses</Link>
                 </li>
                 <li>
-                   <Link to="#" className="text-light text-decoration-none">Blogs</Link>
+                   <Link to="/blogs" className="text-light text-decoration-none">Blogs</Link>
                 </li>
                 <li>
-                   <Link to="#" className="text-light text-decoration-none">Courses</Link>
+                   <Link to="/contact" className="text-light text-decoration-none">Contact</Link>
                 </li>
               </ul>
             </div>
