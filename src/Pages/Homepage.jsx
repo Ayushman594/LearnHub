@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Navbar from '../Components/Navbar.jsx'
 
 import { coursesList,BlogList,ReasonsList } from './Data/Homepage-displayData.js'
@@ -6,7 +6,7 @@ import { coursesList,BlogList,ReasonsList } from './Data/Homepage-displayData.js
 
 function Homepage() {
 
-  
+  const navigate=useNavigate();
   return (
     <>
         <Navbar />
@@ -41,7 +41,9 @@ function Homepage() {
               <img src={course.imagesrc} alt="Web Development" />
               <h3>{course.title}</h3>
               <p>{course.description}</p>
-              <button className="btn btn-primary p-2 mt-2">View Details</button>
+              <button className="btn btn-primary p-2 mt-2" onClick={() => navigate('/view-details', { state: { courseImage: course.imagesrc, courseName: course.title, courseDescription: course.description } })}>
+                View Details
+              </button>
             </div>
                )
           })}
@@ -102,10 +104,7 @@ function Homepage() {
               <h4 className="text-light">Our Terms</h4>
               <ul className="list-unstyled mt-2">
                 <li>
-                   <Link to="#" className="text-light text-decoration-none">Our policy</Link>
-                </li>
-                <li>
-                   <Link to="#" className="text-light text-decoration-none">Terms & conditions</Link>
+                   <Link to="/terms" className="text-light text-decoration-none">Terms & conditions</Link>
                 </li>
               </ul>
             </div>

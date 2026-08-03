@@ -16,6 +16,7 @@ function Loginform() {
                     <label htmlFor="password">Password:</label>
                     <input type="password" id="password" className="form-control" name="password" required />
                     </div>
+                    <p>if you're an admin, then login here <a href="/admin-login">Admin Login</a></p>
                     <button type="submit" className="btn btn-primary p-2 mt-2">Login</button>
                   </form>
             </div>

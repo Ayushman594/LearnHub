@@ -2,10 +2,12 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
+import ViewDetails from './Pages/ViewDetails.jsx'
 import Loginpage from './Forms/Loginform.jsx'
 import Registrationpage from './Forms/Registrationform.jsx'
 import Contactpage from './Pages/Contact-page.jsx'
 import About from './Pages/About-page.jsx'
+import Terms from './Pages/Terms.jsx'
 const routes=createBrowserRouter([{
   path:"/",
   element:<App/>
@@ -19,8 +21,14 @@ const routes=createBrowserRouter([{
   path:"/login",
   element:<Loginpage/>
 },{
+  path:"/view-details",
+  element:<ViewDetails/>
+},{
   path:"/register",
   element:<Registrationpage/>
+},{
+  path:"/terms",
+  element:<Terms/>
 }])
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={routes}/>

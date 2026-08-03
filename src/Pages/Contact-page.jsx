@@ -16,6 +16,10 @@ function Contactpage() {
                     <input type="email" id="email" className="form-control" name="email" required />
                     </div>
                     <div className="d-flex flex-column gap-2">
+                    <label htmlFor="phone">Phone:</label>
+                    <input type="tel" id="phone" className="form-control" name="phone" />
+                    </div>
+                    <div className="d-flex flex-column gap-2">
                     <label htmlFor="message">Message:</label>
                     <textarea id="message" className="form-control" name="message" required></textarea>
                     </div>
