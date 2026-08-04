@@ -62,7 +62,9 @@ function Homepage() {
               <h5>{Blog.uploaddate}</h5>
               <h3>{Blog.blogtitle}</h3>
               <p>{Blog.blogdescription}</p>
-              <button className="btn btn-primary p-2 mt-2">Read More</button>
+              <button className="btn btn-primary p-2 mt-2" onClick={() => navigate('/read-blogs', { state: { blogImage: Blog.blogimg, blogDate: Blog.uploaddate, blogTitle: Blog.blogtitle, blogDescription: Blog.blogdescription } })}>
+                Read More
+              </button>
             </div>
                   )
                 })

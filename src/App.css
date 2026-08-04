@@ -6,6 +6,14 @@
    width:64px;
    height:55px;
 }
+
+.blog-card{
+        width:60vw !important;
+}
+.blog-card img{
+    width:60vw !important;
+    height:30vh !important;
+}
 .terms{
         width:80vw !important;
         height:fit-content !important;
@@ -571,6 +579,7 @@ footer{
         border:1px solid #ccc;
         border-radius:5px;
     }
+    
     .nav-links{
         position:relative;
         left:0;
