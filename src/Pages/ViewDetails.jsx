@@ -57,11 +57,11 @@ function ViewDetails() {
           </div>
           <div className="course-details">
             <h2 className="text-primary">{location.state.courseName}</h2>
-            <p>{location.state.courseDescription}</p>
+            <p className="mt-2">{location.state.courseDescription}</p>
 
             {moredetails.length>0 && (
                 <div className="more-details">
-                    <h3 className="fs-4 mt-2 mb-1">More Details:</h3>
+                    <h3 className="fs-4 mt-2 mb-1">You can learn:</h3>
                     <ul>
                         {moredetails.map((detail,index)=>(
                             <li key={index}>{detail}</li>   
