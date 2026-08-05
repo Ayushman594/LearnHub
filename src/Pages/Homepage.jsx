@@ -1,11 +1,26 @@
 import { Link,useNavigate } from 'react-router-dom'
+import {useEffect,useState} from 'react';
+import API from '../Services/service.jsx'
 import Navbar from '../Components/Navbar.jsx'
 
-import { coursesList,BlogList,ReasonsList } from './Data/Homepage-displayData.js'
+
 
 
 function Homepage() {
-
+  const [ReasonsList,setReasonsList]=useState([]);
+  const [coursesList,setCoursesList]=useState([]);
+  const [BlogList,setBlogList]=useState([]);
+  useEffect(()=>{
+    const fetchReasons=async()=>{
+       const response=await API.getData("ReasonsList");
+       setReasonsList(response);
+       const courseResponse=await API.getData("coursesList");
+       setCoursesList(courseResponse);
+       const blogListResponse=await API.getData("BlogList");
+       setBlogList(blogListResponse);
+    }
+    fetchReasons();
+  },[])
   const navigate=useNavigate();
   return (
     <>
