@@ -24,7 +24,7 @@ function Homepage() {
   const navigate=useNavigate();
   return (
     <>
-        <Navbar />
+        <Navbar isLogin={false} />
         <section className="main-section">
           <h1 className="text-primary">Welcome to LearnHub</h1>
           <p className="fs-5">Your journey to learning starts here!</p>

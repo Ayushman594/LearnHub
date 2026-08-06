@@ -1,31 +1,35 @@
 import logo from '../assets/Booklogo.png'
 import {Link} from 'react-router-dom'
 import {useNavigate} from 'react-router-dom'
-const Navbar = () => {
+const Navbar = (props) => {
   const navigate=useNavigate();
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-light p-1">
+      <nav className="navbar navbar-expand-lg bg-body-light ">
   <div className="nav-container container-fluid">
     <img src={logo} alt="LearnHub Logo" className="navbar-brand logo me-3"/>  
     <Link className="navbar-brand text-primary title text-decoration-none  fw-bold" to="/">LearnHub</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
-    <div className="collapse navbar-collapse me-4" id="navbarSupportedContent">
-      <ul className="navbar-nav nav-links me-auto gap-4 mb-2 mb-lg-0">
+    <div className="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul className="navbar-nav nav-links  gap-4 mb-2">
         <li className="nav-item">
           <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/about">About</Link>
         </li>
-        <li className="nav-item">
+        { props.isLogin && (
+        <>  
+          <li className="nav-item">
           <Link className="nav-link" to="/courses">Explore Courses</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/blog">Blog</Link>
         </li>
+        </>)
+        }
         <li className="nav-item">
           <Link className="nav-link" to="/contact">Contact</Link>
         </li>

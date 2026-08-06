@@ -32,19 +32,19 @@
 .terms h3{
     font-size:20px !important;
 }
-  .contact-section,.login-section,.registration-section{
+.contact-section,.login-section,.registration-section{
         display:flex;
         justify-content:center;
         height:fit-content !important;
-    }
-    .contact,.login,.registration{
+}
+.contact,.login,.registration{
         width:32vw;
         height:fit-content;
         margin-top:13vh !important;
         padding:20px !important;
         border:1px solid #ccc;
         border-radius:5px;
-    }
+}
     .contact form,.login form,.registration form{
         display:flex;
         flex-direction:column;
@@ -85,10 +85,7 @@
     margin-top: 20px !important;
 }
 .navbar{
-    position:fixed;
-    width:100%;
     background-color:white;
-    top:0;
 }
 .Reason-container img{
     width:105px;
@@ -262,14 +259,14 @@ footer{
         margin-bottom: 10px !important;
     }
     .nav-links{
-        position:relative;
-        left:0;
-        margin-right:75vw !important;
-        margin-top: 10px !important;
+        position: relative !important ;
+        right:70vw !important;
+        margin-left: 16px !important;
     }
     .nav-btns{
-        position:relative;
-        margin-right:80vw !important;
+        position: relative !important ;
+        right:65vw !important;
+        margin-left: 10px;
     }
     .main-section p{
         font-size:16px !important;
@@ -450,8 +447,7 @@ footer{
     }
     .nav-links{
         position:relative;
-        left:0;
-        margin-right:75vw !important;
+        right:80vw !important;
         margin-top: 10px !important;
     }
     .nav-btns{
@@ -582,8 +578,7 @@ footer{
     
     .nav-links{
         position:relative;
-        left:0;
-        margin-right:82vw !important;
+        right:85vw !important;
         margin-top: 10px !important;
     }
     .nav-btns{
