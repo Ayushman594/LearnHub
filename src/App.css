@@ -37,6 +37,11 @@
         justify-content:center;
         height:fit-content !important;
 }
+header .nav-links{
+    position: relative;
+    left:50vw !important;
+    gap:50px !important;
+}
 .contact,.login,.registration{
         width:32vw;
         height:fit-content;
@@ -252,6 +257,16 @@ footer{
     .navbar ul{
         margin-left: 10px !important;
     }
+    header .navbar-collapse{
+        position:relative;
+    }
+    header .nav-links{
+    position: absolute;
+    top:1vh !important;
+    left:0 !important;
+    gap:20px !important;
+    margin-right:75vw !important;
+    }
     .navbar .login-btn{
         margin-top: 10px !important;
     }
@@ -403,6 +418,16 @@ footer{
 @media screen and (min-width:481px) and (max-width:768px){
     .navbar ul{
         margin-left: 10px !important;
+    }
+    header .navbar-collapse{
+        position:relative;
+    }
+    header .nav-links{
+    position: absolute;
+    top:1vh !important;
+    left:0 !important;
+    gap:20px !important;
+    margin-right:65vw !important;
     }
     .view-details{
         width:80vw !important;

@@ -46,14 +46,14 @@ const Navbar = (props) => {
         </li>
         
       </ul>
-      <ul className="navbar-nav nav-btns me-auto gap-4 mb-2 mb-lg-0">
+      {props.isLogin ? "" : <ul className="navbar-nav nav-btns me-auto gap-4 mb-2 mb-lg-0">
         <li className="nav-item">
           <button className="btn btn-primary login-btn" type="submit" onClick={() => navigate('/login')}>Login</button>
         </li>
         <li className="nav-item">
           <button className="btn btn-primary register-btn" type="submit" onClick={() => navigate('/register')}>Register</button>
         </li>
-      </ul>
+      </ul>}
       </div>
     </div>
 </nav>

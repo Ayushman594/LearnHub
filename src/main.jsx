@@ -4,6 +4,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
 import AdminLogin from './Forms/AdminLogin.jsx'
 import ReadBlogs from './Pages/ReadBlogs.jsx'
+import AdminDashboard from './Pages/AdminDashboard.jsx'
 import ViewDetails from './Pages/ViewDetails.jsx'
 import Loginpage from './Forms/Loginform.jsx'
 import Registrationpage from './Forms/Registrationform.jsx'
@@ -37,6 +38,9 @@ const routes=createBrowserRouter([{
 },{
   path:"/admin-login",
   element:<AdminLogin/>
+},{
+  path:"/admin-dashboard",
+  element:<AdminDashboard/>
 }])
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={routes}/>
