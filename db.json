@@ -99,5 +99,7 @@
     },{
       "id":4,
       "content":"Progressive Web Apps (PWAs) remain an important trend because they combine the advantages of websites and mobile applications. PWAs provide fast loading speeds, offline functionality, push notifications, and installation capabilities without requiring users to download applications from app stores. Businesses continue to adopt PWAs to improve customer engagement, reduce development costs, and deliver consistent experiences across multiple devices."
-    }]
+    }],
+    "AdminDashboard":[]
+
 }

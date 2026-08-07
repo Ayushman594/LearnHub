@@ -20,13 +20,24 @@ const Navbar = (props) => {
         <li className="nav-item">
           <Link className="nav-link" to="/about">About</Link>
         </li>
-        { props.isLogin && (
+        { props.isLogin && props.isUser && (
         <>  
           <li className="nav-item">
           <Link className="nav-link" to="/courses">Explore Courses</Link>
         </li>
         <li className="nav-item">
           <Link className="nav-link" to="/blog">Blog</Link>
+        </li>
+        </>)
+        }
+
+        { props.isLogin && props.isAdmin && (
+        <>  
+          <li className="nav-item">
+          <Link className="nav-link" to="/edit-courses">Edit Courses</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="/edit-blogs">Edit Blogs</Link>
         </li>
         </>)
         }

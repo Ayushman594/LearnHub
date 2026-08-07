@@ -1,13 +1,12 @@
-import Navbar from "../Components/Navbar"
-import {Link} from 'react-router-dom'
+import Navbar from '../Components/Navbar'
 
-function Loginform() {
+function AdminLogin() {
   return (
     <>
-      <Navbar/>
-        <section className="login-section">
+          <Navbar/>
+          <section className="login-section">
             <div className="login">
-                  <h2 className="text-primary"> Login </h2>
+                  <h2 className="text-primary">Admin Login</h2>
                   <form>
                     <div className="d-flex flex-column gap-2">
                     <label htmlFor="email">Email:</label>
@@ -17,13 +16,12 @@ function Loginform() {
                     <label htmlFor="password">Password:</label>
                     <input type="password" id="password" className="form-control" name="password" required />
                     </div>
-                    <p>if you're an admin, then login here <Link to="/admin-login">Admin Login</Link></p>
                     <button type="submit" className="btn btn-primary p-2 mt-2">Login</button>
                   </form>
             </div>
-        </section>            
+        </section>
     </>
   )
 }
 
-export default Loginform
+export default AdminLogin
