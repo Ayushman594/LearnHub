@@ -1,11 +1,14 @@
-import Navbar from '../Components/Navbar.jsx'
-
 function AdminDashboard() {
   return (
     <>
-     <header>
-      <Navbar isLogin={true} isAdmin={true} isUser={false}/>
-     </header>
+     <section className="side-Navbar bg-dark text-light">
+        <ul className="list-unstyled pt-5">
+           <li className="fw-bold mb-3">
+              View Existing Courses
+           </li>
+           <li className="fw-bold mb-2">View Existing Blogs</li>
+        </ul>
+     </section>
     </>
   )
 }

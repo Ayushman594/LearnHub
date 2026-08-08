@@ -6,6 +6,12 @@
    width:64px;
    height:55px;
 }
+.side-Navbar{
+    display:flex;
+    justify-content: center !important;
+    width:30vw ;
+    height:92.1vh !important;
+}
 
 .blog-card{
         width:60vw !important;
@@ -586,6 +592,16 @@ footer{
     .navbar .login-btn{
         margin-top: 10px !important;
     }
+    header .navbar-collapse{
+        position:relative;
+    }
+    header .nav-links{
+    position: absolute;
+    top:1vh !important;
+    left:0 !important;
+    gap:20px !important;
+    margin-right:65vw !important;
+    }
     .register-btn{
         margin-bottom: 10px !important;
     }
@@ -700,6 +716,14 @@ footer{
     .nav-btns{
         position:absolute;
         right:0;
+    }   header .navbar-collapse{
+        position:relative;
+    }
+    header .nav-links{
+    position: absolute;
+    margin-top:15px !important;
+    margin-left:35vw !important;
+    gap:50px !important;
     }
     .courses-section,.courses-container{
         height:180vh !important;
