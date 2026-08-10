@@ -14,7 +14,7 @@ function Homepage() {
     const fetchReasons=async()=>{
        const response=await API.getData("ReasonsList");
        setReasonsList(response);
-       const courseResponse=await API.getData("coursesList");
+       const courseResponse=await API.getData("sampleCoursesList");
        setCoursesList(courseResponse);
        const blogListResponse=await API.getData("BlogList");
        setBlogList(blogListResponse);

@@ -2,6 +2,15 @@
     margin:0 !important;
     padding:0 !important;
 }
+.enroll{
+    margin-left: 35% !important;
+}
+.allcoursescontainer{
+    display:grid;
+    grid-template-columns: 30vw 30vw !important;
+    grid-template-rows: 50vh 50vh !important;
+    height:80vh !important;
+}
 .logo{
    width:64px;
    height:55px;

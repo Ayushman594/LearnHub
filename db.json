@@ -12,7 +12,7 @@
   "logo":"src/Images/Certificates.png",
   "why":"Earn Certificates"
 }],
-   "coursesList":[{
+   "sampleCoursesList":[{
      "imagesrc":"src/Images/Logoforwebdevelopmentcard.png",
      "title":"Web Development",
      "description":"Learn to build modern web applications using HTML, CSS, and JavaScript."
@@ -100,6 +100,18 @@
       "id":4,
       "content":"Progressive Web Apps (PWAs) remain an important trend because they combine the advantages of websites and mobile applications. PWAs provide fast loading speeds, offline functionality, push notifications, and installation capabilities without requiring users to download applications from app stores. Businesses continue to adopt PWAs to improve customer engagement, reduce development costs, and deliver consistent experiences across multiple devices."
     }],
-    "AdminDashboard":[]
+    "CoursesList":[
+      {
+         "courseImg":"src/Images/Javacourseimg.png",
+         "coursetitle":"Learn Java fundamentals",
+         "description":"Build a strong foundation in Java by learning essential programming concepts from the ground up. This course covers variables, data types, operators, conditional statements, loops, arrays, methods, and object-oriented programming. By the end of the course, you'll have the confidence to create basic Java applications and a solid foundation for learning advanced Java, JDBC, Spring Boot, and full-stack development.",
+         "fee":"₹ 450"
+      },{
+         "courseImg":"src/Images/Logoforwebdevelopmentcard.png",
+         "coursetitle":"Learn Web development",
+         "description":"Learn the fundamentals of web development and discover how modern websites and web applications are built. This course covers HTML, CSS, and JavaScript, helping you create structured, attractive, and interactive web pages.Through practical examples and hands-on projects, you'll learn responsive design, forms, layouts, DOM manipulation, events, and basic API integration. By the end of the course, you'll have the skills to build responsive websites and a strong foundation for learning advanced frontend technologies like React.js.",
+         "fee":"₹ 550"
+      }
+    ]
 
 }
