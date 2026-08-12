@@ -3,13 +3,24 @@
     padding:0 !important;
 }
 .enroll{
-    margin-left: 35% !important;
+    margin-left:37% !important;
+    margin-right: auto !important;
 }
 .allcoursescontainer{
     display:grid;
-    grid-template-columns: 30vw 30vw !important;
-    grid-template-rows: 50vh 50vh !important;
-    height:80vh !important;
+    height:190vh;
+    grid-template-columns: 30vw 30vw;
+    grid-template-rows: 86vh 86vh;
+    justify-content: center;
+    gap:50px;
+}
+.allcoursescontainer .course-card img{
+    border-radius: 10px !important;
+    margin-bottom: 10%;
+}
+.allcoursescontainer .course-card{
+    width:30vw !important;
+    height: 86vh !important;
 }
 .logo{
    width:64px;

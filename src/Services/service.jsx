@@ -8,6 +8,10 @@ const services={
     getData:async(endpoint)=>{
         const response = await axios.get(`${API_URL}/${endpoint}`);
         return response.data;
+    },
+    searchData:async(title,endpoint,key)=>{
+        const response=await axios.get(`${API_URL}/${endpoint}?${key}:contains=${encodeURIComponent(title)}`);
+        return response.data;
     }
 }
 export default services;
