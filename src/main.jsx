@@ -12,6 +12,8 @@ import Registrationpage from './Forms/Registrationform.jsx'
 import Contactpage from './Pages/Contact-page.jsx'
 import About from './Pages/About-page.jsx'
 import Terms from './Pages/Terms.jsx'
+import AddTeachers from './Forms/AddTeachers.jsx'
+
 const routes=createBrowserRouter([{
   path:"/",
   element:<App/>
@@ -45,6 +47,9 @@ const routes=createBrowserRouter([{
 },{
   path:"/explore-courses",
   element:<ExploreCourses/>
+},{
+  path:"/add-teachers",
+  element:<AddTeachers/>
 }])
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={routes}/>

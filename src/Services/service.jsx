@@ -9,6 +9,10 @@ const services={
         const response = await axios.get(`${API_URL}/${endpoint}`);
         return response.data;
     },
+    addData:async(endpoint,data)=>{
+       const response=await axios.post(`${API_URL}/${endpoint}`,data);
+       return response.data;
+    },
     searchData:async(title,endpoint,key)=>{
         const response=await axios.get(`${API_URL}/${endpoint}?${key}:contains=${encodeURIComponent(title)}`);
         return response.data;
