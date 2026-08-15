@@ -15,7 +15,7 @@ function AdminLogin() {
 
    navigate("/admin-dashboard",{
      state:{
-       name:data.name
+       name:registereddata.name
      }
    })
 
