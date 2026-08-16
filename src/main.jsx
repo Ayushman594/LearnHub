@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import App from './App.jsx'
+import ViewLearners from './Pages/View-Learners.jsx'
 import ExploreCourses from './Pages/ExploreCourses.jsx'
 import AdminLogin from './Forms/AdminLogin.jsx'
 import ReadBlogs from './Pages/ReadBlogs.jsx'
@@ -50,6 +51,9 @@ const routes=createBrowserRouter([{
 },{
   path:"/add-teachers",
   element:<AddTeachers/>
+},{
+  path:"/view-learners",
+  element:<ViewLearners/>
 }])
 createRoot(document.getElementById('root')).render(
   <RouterProvider router={routes}/>

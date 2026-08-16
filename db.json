@@ -187,7 +187,20 @@
       "id": "caVnfcxvoyQ"
     }
   ],
-  "LearnersData": [],
+  "LearnersData": [
+    {
+      "name": "Aman Deshmukh",
+      "email": "Amandeshmukh@gmail.com",
+      "password": "Amayya",
+      "id": "67ZpbnRTiAA"
+    },
+    {
+      "name": "Shreya patil",
+      "email": "shreyapatil@example.com",
+      "password": "spatil",
+      "id": "agz1bACjJow"
+    }
+  ],
   "TeachersData": [
     {
       "teacherId": "T001",
@@ -195,6 +208,27 @@
       "email": "ayushmanchoudhary43@gmail.com",
       "message": "3+ years experience in Front end",
       "id": "RuFwgXCunx8"
+    },
+    {
+      "teacherId": "T002",
+      "name": "Gajodhar Gupta",
+      "email": "ayushmanchoudhary43@gmail.com",
+      "message": "10 years in Human Resources",
+      "id": "njLv6ABICyU"
+    },
+    {
+      "teacherId": "T003",
+      "name": "Bharti Kaushik",
+      "email": "Bhartikaushik@example.com",
+      "message": "5 years experience in Java",
+      "id": "zvcnnclEGss"
+    },
+    {
+      "teacherId": "T004",
+      "name": "Ashutosh Gawardkar",
+      "email": "AshutoshGawardkar@example.com",
+      "message": "7+ years experience in React development",
+      "id": "wXfRcTZiLCs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

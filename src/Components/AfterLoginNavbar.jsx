@@ -20,7 +20,7 @@ function AdminNavbar(props) {
           <Link className="nav-link" to="/admin-dashboard">Dashboard</Link>
         </li> : "" }
         <li className="nav-item mt-1">
-          <Link className="nav-link" to="#">Update Courses</Link>
+          <Link className="nav-link" to="/explore-courses">Update Courses</Link>
         </li>
         <li className="nav-item mt-1">
           <Link className="nav-link" to="#">Update Blogs</Link>
@@ -29,7 +29,7 @@ function AdminNavbar(props) {
           <Link className="nav-link" to="/add-teachers">Add Teachers</Link>
         </li>
          <li className="nav-item mt-1">
-          <Link className="nav-link" to="#">Add New Admin</Link>
+          <Link className="nav-link" to="/view-learners">View Learners</Link>
         </li>
         <li className="nav-item">
           <button className="btn btn-primary" onClick={()=>navigate('/admin-login')}>Log out</button>

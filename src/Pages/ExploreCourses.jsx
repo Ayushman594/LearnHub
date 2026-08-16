@@ -1,4 +1,4 @@
-import Navbar from '../Components/Navbar.jsx'
+import Navbar from '../Components/AfterLoginNavbar.jsx'
 import {useEffect,useState} from 'react'
 import services from '../Services/service.jsx'
 
@@ -27,7 +27,7 @@ function ExploreCourses() {
      
   return (
     <>
-      <Navbar islogin={false}/>
+      <Navbar needDashboard={true}/>
       <section className="pt-4">
          <h3 className="text-primary text-center">Explore Courses</h3>
 

@@ -34,7 +34,7 @@ function AddTeachers() {
 
   return (
     <>
-      <AdminNavbar name="Ayushman Choudhary" needDashboard={true} />
+      <AdminNavbar  needDashboard={true} />
       <section className="pt-5 d-flex flex-column">
         <h5 className="text-center fs-3 text-primary">Add Teachers info</h5>
 
@@ -42,7 +42,7 @@ function AddTeachers() {
           className="border border-dark rounded p-4 mt-3 w-50 mx-auto"
           onSubmit={handleSubmit(onSubmit)}
         >
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column mb-3">
             <label htmlFor="id">Enter Teacher's ID</label>
             <input
               id="teacherId"
@@ -52,7 +52,7 @@ function AddTeachers() {
               })}
             />
           </div>
-          <div className="d-flex flex-column">
+          <div className="d-flex flex-column mb-3">
             <label htmlFor="name">Enter Teacher's Name</label>
             <input
               id="name"
@@ -71,7 +71,7 @@ function AddTeachers() {
             )}
           </div>
 
-          <div className="d-flex flex-column mt-2">
+          <div className="d-flex flex-column mt-3">
             <label htmlFor="email">Email:</label>
             <input
               id="email"
