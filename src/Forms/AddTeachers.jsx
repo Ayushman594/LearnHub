@@ -20,7 +20,10 @@ function AddTeachers() {
     };
     addData(data);
   }
-
+   const handleDelete=async(id)=>{
+       await services.deleteData("TeachersData",id);
+       setState((prev) => prev.filter((teacher) => teacher.id !== id));
+    }
   useEffect(() => {
     const fetchData = async () => {
       const response = await services.getData("TeachersData");
@@ -114,17 +117,19 @@ function AddTeachers() {
               <th className="p-3">Name</th>
               <th className="p-3">Email</th>
               <th className="p-3">Specialization</th>
+              <th></th>
             </tr>
           </thead>
 
           <tbody>
             {state.map((li) => {
               return (
-                <tr>
+                <tr key={li.id}>
                   <td className="border border-dark ps-2 p-3">{li.teacherId}</td>
                   <td className="border border-dark ps-2">{li.name}</td>
                   <td className="border border-dark ps-2">{li.email}</td>
                   <td className="border border-dark ps-2">{li.message}</td>
+                  <td className="border border-dark ps-2 pe-2 "><button className="btn btn-danger p-2" onClick={()=>handleDelete(li.id)}>Delete</button></td>
                 </tr>
               );
             })}

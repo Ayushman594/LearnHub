@@ -191,17 +191,10 @@
   "TeachersData": [
     {
       "teacherId": "T001",
-      "name": "Brijesh Kumar",
-      "email": "brijkumar@example.com",
-      "message": "3+ years experience in Front end",
-      "id": "pBP8dZrVzWE"
-    },
-    {
-      "teacherId": "T002",
       "name": "Ayushman choudhary",
       "email": "ayushmanchoudhary43@gmail.com",
-      "message": "5+ years in app development",
-      "id": "7ra9szvPi1Y"
+      "message": "3+ years experience in Front end",
+      "id": "RuFwgXCunx8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

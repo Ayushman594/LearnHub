@@ -23,6 +23,8 @@ function ExploreCourses() {
     const response = await services.searchData(title, endpoint, key);
     setCourseData(response);
   }
+
+     
   return (
     <>
       <Navbar islogin={false}/>
