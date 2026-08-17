@@ -145,46 +145,32 @@
   ],
   "CoursesList": [
     {
-      "courseImg": "src/Images/Javacourseimg.png",
-      "coursetitle": "Learn Java fundamentals",
-      "description": "Build a strong foundation in Java by learning essential programming concepts from the ground up. This course covers variables, data types, operators, conditional statements, loops, arrays, methods, and object-oriented programming. By the end of the course, you'll have the confidence to create basic Java applications and a solid foundation for learning advanced Java, JDBC, Spring Boot",
-      "fee": "₹ 450",
-      "id": "kFUQM84Rj9E"
-    },
-    {
       "courseImg": "src/Images/Logoforwebdevelopmentcard.png",
       "coursetitle": "Learn Web development",
       "description": "Learn the fundamentals of web development and discover how modern websites and web applications are built. This course covers HTML, CSS, and JavaScript, helping you create structured, attractive, and interactive web pages. By the end of the course, you'll have the skills to build responsive websites and a strong foundation for learning advanced frontend technologies like React.js.",
-      "fee": "₹ 550",
+      "fee": "550",
       "id": "hUPzYKtVfFQ"
-    },
-    {
-      "courseImg": "src/Images/Backendcourse.png",
-      "coursetitle": "Learn Backend with Django and Python",
-      "description": "Learn how to build powerful and scalable backend applications using Python and Django. This course covers essential backend concepts such as routing, views, models, databases, authentication, and REST APIs.Through hands-on projects, you'll learn how to connect the backend with frontend applications, and create secure web APIs. By the end of the course, you'll have the practical skills needed to develop and deploy real-world backend applications with Django.",
-      "fee": "₹ 450",
-      "id": "C_KuTLBogtk"
-    },
-    {
-      "courseImg": "src/Images/MobileAppDevelopmentLogo.png",
-      "coursetitle": "Learn Mobile App Development",
-      "description": "Learn how to design and develop modern mobile applications for Android and iOS devices. This course introduces the fundamentals of mobile app development, including user interface design, navigation, application logic, API integration, and data management.Through practical projects, you'll learn how to create responsive and user-friendly mobile applications  By the end of the course, you'll have the skills to build functional mobile apps and a strong foundation for pursuing a career in mobile application development.",
-      "fee": "₹ 550",
-      "id": "3N-kcfwJYhM"
     },
     {
       "courseImg": "src/Images/Reactimages.png",
       "coursetitle": "Learn React fundamentals",
       "description": "Learn how to build modern, interactive, and reusable user interfaces with React.js. This course starts with React fundamentals and gradually introduces components, JSX, props, state, event handling, hooks, forms, and conditional rendering.Through hands-on projects, you'll learn how to manage application data, work with APIs, implement routing, and create responsive single-page applications. By the end of the course, you'll have the practical skills needed to develop scalable React applications and confidently work on real-world frontend projects.",
-      "fee": "₹ 600",
+      "fee": "600",
       "id": "fXP0I_e_sD0"
+    },
+    {
+      "courseImg": "src/Images/Backendcourse.png",
+      "coursetitle": "Learn Backend",
+      "description": "Learn how to build powerful and scalable backend applications using Python and Django. This course covers essential backend concepts such as routing, views, models, databases, authentication, and REST APIs. Through hands-on projects, you'll learn how to connect the backend with frontend applications, manage data efficiently, and create secure web APIs. By the end of the course, you'll have the practical skills needed to develop and deploy real-world backend applications with Django.",
+      "fee": "550",
+      "id": "MpbNONluXlU"
     },
     {
       "courseImg": "src/Images/Datascience.png",
       "coursetitle": "Learn Data Science",
-      "description": "Learn how to transform raw data into meaningful insights using Python and popular data science tools. This course introduces essential concepts such as data collection, data cleaning, exploratory data analysis, data visualization, and basic statistical techniques.You'll work with libraries such as NumPy, Pandas, Matplotlib, and Seaborn to analyze and visualize real-world datasets.By the end of the course, you'll be able to analyze datasets, create informative visualizations, identify patterns, and apply basic machine learning techniques to real-world problems.",
-      "fee": "₹ 500",
-      "id": "caVnfcxvoyQ"
+      "description": "Learn how to transform raw data into meaningful insights using Python and popular data science tools. This course introduces essential concepts such as data collection, data cleaning, exploratory data analysis, data visualization, and basic statistical techniques.\n\nYou'll work with libraries such as NumPy, Pandas, Matplotlib, and Seaborn to analyze and visualize real-world datasets. The course also introduces the fundamentals of machine learning, helping you understand how data can be used to build predictive models.",
+      "fee": "499",
+      "id": "JwaXGAQR3VI"
     }
   ],
   "LearnersData": [
@@ -210,13 +196,6 @@
       "id": "RuFwgXCunx8"
     },
     {
-      "teacherId": "T002",
-      "name": "Gajodhar Gupta",
-      "email": "ayushmanchoudhary43@gmail.com",
-      "message": "10 years in Human Resources",
-      "id": "njLv6ABICyU"
-    },
-    {
       "teacherId": "T003",
       "name": "Bharti Kaushik",
       "email": "Bhartikaushik@example.com",
@@ -229,6 +208,13 @@
       "email": "AshutoshGawardkar@example.com",
       "message": "7+ years experience in React development",
       "id": "wXfRcTZiLCs"
+    },
+    {
+      "teacherId": "T002",
+      "name": "Aryan Mohite",
+      "email": "Aryandmohite@example.com",
+      "message": "5+ Years experience in Mobile App development",
+      "id": "OEWzjZQ6pTw"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

@@ -10,7 +10,7 @@
     display:grid;
     height:190vh;
     grid-template-columns: 30vw 30vw;
-    grid-template-rows: 86vh 86vh;
+    grid-template-rows: 95vh 95vh;
     justify-content: center;
     gap:50px;
 }
@@ -20,7 +20,8 @@
 }
 .allcoursescontainer .course-card{
     width:30vw !important;
-    height: 86vh !important;
+    height: 95vh !important;
+    gap:50px;
 }
 .logo{
    width:64px;
