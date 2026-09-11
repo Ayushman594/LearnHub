@@ -1,5 +1,6 @@
 import {useForm} from 'react-hook-form'
 import services from "../Services/service";
+import BackButton from '../Forms/BackButton'
 function AddCourse() {
 
   const {register, handleSubmit,formState:{errors}}=useForm();
@@ -13,6 +14,7 @@ function AddCourse() {
   return (
     <>
      <section className="pt-4">
+         <BackButton/>
          <h3 className="text-primary text-center">Add New Course</h3>
          <form className="mx-auto mt-3 w-25 h-25" onSubmit={handleSubmit(sendData)}>
             <div className="d-flex flex-column mb-3 mt-4">

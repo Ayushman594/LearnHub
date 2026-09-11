@@ -2,6 +2,8 @@ import {useEffect,useState} from 'react'
 import services from '../Services/service.jsx'
 import { useNavigate } from 'react-router-dom';
 
+import AdminSidebar from '../Components/AdminSidebar.jsx';
+
 function ExploreCourses() {
     const Navigate=useNavigate();
     const [courseData,setCourseData]=useState([]);
@@ -32,7 +34,9 @@ function ExploreCourses() {
   
   return (
     <>
-      <section className="pt-5">
+      <section className="d-flex">
+         <AdminSidebar/>
+         <div className="ps-3 pt-5">
          <h3 className="text-primary text-center">Edit Courses</h3>
 
          <div className="d-flex justify-content-between">
@@ -60,7 +64,7 @@ function ExploreCourses() {
               )
          })}
          </div>
-         
+         </div>
       </section>
     </>
   )

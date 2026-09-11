@@ -1,6 +1,6 @@
 import services from '../Services/service'
 import { useEffect,useState } from 'react'
-
+import AdminSidebar from '../Components/AdminSidebar';
 function ViewLearners() {
     const [learners,setLearners]=useState([]);
 
@@ -19,16 +19,21 @@ function ViewLearners() {
      if(response){
          alert("Learner Deleted successfully");
      }
+     setLearners((previous) =>
+        previous.filter((learner) => learner.user_id !== id)
+    );
     }
  }
   return (
     <>
-      <section className="pt-4">
+      <section className="d-flex">
+        <AdminSidebar/>
+        <div className=" main-content">
           <h5 className="text-center text-primary fs-3">View Learners</h5>
           <table className="mx-auto mt-4">
               <thead>
                   <tr className="bg-dark text-light">
-                    <th className="p-3">Name</th>
+                    <th className="p-3">Learner Name</th>
                     <th className="p-3">Email</th>
                     <th className="p-3"></th>
                     <th className="p-3"></th>
@@ -48,6 +53,7 @@ function ViewLearners() {
                   })}
               </tbody>
           </table>
+          </div>
       </section>
     </>
   )

@@ -53,6 +53,7 @@ function AdminDashboard() {
   const [state,setState]=useState([]);
   const [Learners,setLearners]=useState([]);
 //   const [Teachers,setTeachers]=useState([]);
+  const [query,setQuery]=useState([]);
 
 
   useEffect(()=>{
@@ -60,17 +61,20 @@ function AdminDashboard() {
           setState(CoursesList);
           const response=await services.getData("users");
           setLearners(response);
+          const queryResponse=await services.getData("Contact");
+          setQuery(queryResponse);
       }
       fetchdata();
   },[]);
   return (
     <>
-     <div className="d-flex">
-      <AdminSidebar/>
-        <section className="d-flex main-content flex-column align-items-start gap-5">
+     
+        <section className="d-flex">
+         <AdminSidebar/>
+          <div className="d-flex main-content flex-column align-items-start gap-5">
            <h3 className="fs-3 text-dark">Admin Dashboard</h3>
 
-          <section className="d-flex gap-4 w-50 flex-wrap">
+          <section className="d-flex gap-4 w-75 flex-wrap">
            <div className="border box p-5 border-dark rounded">
               <p className="fw-bold">No of Courses:</p>
               <p className="fs-2">{state.length}</p>
@@ -87,9 +91,14 @@ function AdminDashboard() {
               <p className="fw-bold">Total Feedbacks:</p>
               {/* <p className="fs-2">{Teachers.length}</p> */}
            </div>
+            <div className="border box p-5 border-dark rounded">
+              <p className="fw-bold">No of Queries:</p>
+              <p className="fs-2">{query.length}</p>
+           </div>
            </section>
+           </div>
         </section>
-        </div>
+        
     </>
   )
 }

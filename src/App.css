@@ -2,35 +2,51 @@
     margin:0 !important;
     padding:0 !important;
 }
+
 .enroll{
     margin-left:37% !important;
     margin-right: auto !important;
 }
 .box{
-    width:40%;
+    width:45%;
+}
+.back-button{
+    position:fixed;
+    width:70px;
+    height: fit-content;
+}
+.back-button span{
+    font-size:25px;
+}
+.back-button:hover{
+    background-color:transparent !important;
+    color:blue !important;
 }
 .sidebar{
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height:100vh !important;
+    /* height:100% !important; */
     width:30vw;
     color: white !important;
     background-color: black;
 }
-.sidebar ul li {
+.sidebar ul li a {
     color:white !important;
+    padding:8px 7px 8px 10px !important;
+}
+.sidebar ul li a.active{
+    border-left:5px solid blue;
+    background-color: rgb(255, 248, 248);
+    color:black !important;
 }
 .main-content{
     width:80vw;
+    height:fit-content !important;
     padding-left: 5vw !important;
     padding-top:5vh !important;
 }
 .allcoursescontainer{
     display:grid;
-    height:190vh;
+    height:fit-content;
     grid-template-columns: 30vw 30vw;
-    grid-template-rows: 95vh 95vh;
     justify-content: center;
     gap:50px;
 }
