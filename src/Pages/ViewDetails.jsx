@@ -79,7 +79,7 @@ function ViewDetails() {
                     </ul>
                 </div>
             )}
-            <p className="fw-bold">Register,login and Enroll now to start your learning journey!</p>
+            <p className="fw-bold fs-5">Register,login and Enroll now to start your learning journey!</p>
             <button className="btn btn-primary p-2 mt-2" onClick={handleMoreDetails}>view description</button>
           </div>
       </section>

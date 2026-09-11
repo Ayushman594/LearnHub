@@ -6,6 +6,26 @@
     margin-left:37% !important;
     margin-right: auto !important;
 }
+.box{
+    width:40%;
+}
+.sidebar{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height:100vh !important;
+    width:30vw;
+    color: white !important;
+    background-color: black;
+}
+.sidebar ul li {
+    color:white !important;
+}
+.main-content{
+    width:80vw;
+    padding-left: 5vw !important;
+    padding-top:5vh !important;
+}
 .allcoursescontainer{
     display:grid;
     height:190vh;

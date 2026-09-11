@@ -1,4 +1,4 @@
-import AdminNavbar from "../Components/AfterLoginNavbar";
+
 import { useForm } from "react-hook-form";
 import services from "../Services/service";
 import { useState, useEffect } from "react";
@@ -34,7 +34,6 @@ function AddTeachers() {
 
   return (
     <>
-      <AdminNavbar  needDashboard={true} />
       <section className="pt-5 d-flex flex-column">
         <h5 className="text-center fs-3 text-primary">Add Teachers info</h5>
 

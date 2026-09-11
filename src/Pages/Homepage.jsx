@@ -1,26 +1,84 @@
 import { Link,useNavigate } from 'react-router-dom'
-import {useEffect,useState} from 'react';
-import API from '../Services/service.jsx'
 import Navbar from '../Components/Navbar.jsx'
 
-
-
-
-function Homepage() {
-  const [ReasonsList,setReasonsList]=useState([]);
-  const [coursesList,setCoursesList]=useState([]);
-  const [BlogList,setBlogList]=useState([]);
-  useEffect(()=>{
-    const fetchReasons=async()=>{
-       const response=await API.getData("ReasonsList");
-       setReasonsList(response);
-       const courseResponse=await API.getData("sampleCoursesList");
-       setCoursesList(courseResponse);
-       const blogListResponse=await API.getData("BlogList");
-       setBlogList(blogListResponse);
+const reasonsList = [
+    {
+      "logo": "src/Images/IndustryExpert.png",
+      "why": "Learn from Industry Experts",
+      "id": "_jmKGGkI_4E"
+    },
+    {
+      "logo": "src/Images/HandsonProjects.png",
+      "why": "Hands On projects",
+      "id": "SLsF7bKetZI"
+    },
+    {
+      "logo": "src/Images/Downloadable.png",
+      "why": "Downloadable Resources",
+      "id": "0M7QxJjAlnc"
+    },
+    {
+      "logo": "src/Images/Certificates.png",
+      "why": "Earn Certificates",
+      "id": "xYxJbLpfX8w"
     }
-    fetchReasons();
-  },[])
+  ]
+  
+const coursesList = [
+    {
+      "imagesrc": "src/Images/Logoforwebdevelopmentcard.png",
+      "title": "Web Development",
+      "description": "Learn to build modern web applications using HTML, CSS, and JavaScript.",
+      "id": "5Pp5S5-Ncew"
+    },
+    {
+      "imagesrc": "src/Images/LogoforDataScience.png",
+      "title": "Data Science",
+      "description": "Master data analysis, visualization, and machine learning techniques.",
+      "id": "4qU6H8qI2iA"
+    },
+    {
+      "imagesrc": "src/Images/MobileAppDevelopmentLogo.png",
+      "title": "Mobile App Development",
+      "description": "Create mobile applications for Android and iOS platforms using Flutter and React Native.",
+      "id": "ZALFWdTe3xA"
+    }
+  ]
+
+
+const BlogList = [
+    {
+      "blogimg": "src/Images/DeveloperPortfolio.png",
+      "blogtitle": "How to Build a Developer Portfolio",
+      "blogdescription": " A developer portfolio is your digital showcase that highlights your skills, projects, and experience. It helps recruiters and clients understand what you can build and how you solve real-world problems...",
+      "uploaddate": "26-07-2026",
+      "id": "P__aYWR8spg"
+    },
+    {
+      "blogimg": "src/Images/LearnHub.png",
+      "blogtitle": "How LearnHub Helps You Learn Faster",
+      "blogdescription": "LearnHub is designed to make learning simple, practical, and effective. Explore structured courses, follow clear learning paths, and build real-world projects that strengthen your skills. Whether you're a beginner...",
+      "uploaddate": "28-6-2026",
+      "id": "3cwOWxw8tqM"
+    },
+    {
+      "blogimg": "src/Images/TopCoursesBlog.png",
+      "blogtitle": "Top Courses Every Beginner Should Start With",
+      "blogdescription": "Starting your learning journey with the right courses builds a strong foundation for a successful career in technology. Focus on fundamental skills first, then gradually move toward advanced concepts and real-world projects...",
+      "uploaddate": "29-6-2026",
+      "id": "DVxJ_1CzcOI"
+    },
+    {
+      "blogimg": "src/Images/TrendsBlog.png",
+      "blogtitle": "Top Web Development Trends in 2026",
+      "blogdescription": "Web development continues to evolve with new technologies that make websites faster, smarter, and more interactive. In 2026, developers are focusing on AI-powered tools, high-performance web applications, and enhanced user experiences...",
+      "uploaddate": "30-6-2026",
+      "id": "xVSYwAMZcow"
+    }
+  ];
+function Homepage() {
+
+
   const navigate=useNavigate();
   return (
     <>
@@ -34,7 +92,7 @@ function Homepage() {
           <h2 className="text-center text-primary">Why LearnHub ?</h2>
           <div className="Reasonstoconnect">
               {
-                 ReasonsList.map((reason)=>{
+                 reasonsList.map((reason)=>{
                   return (
                      <div className="Reason-container">
                       <div>

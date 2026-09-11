@@ -30,17 +30,6 @@ const Navbar = (props) => {
         </li>
         </>)
         }
-
-        { props.isLogin && props.isAdmin && (
-        <>  
-          <li className="nav-item">
-          <Link className="nav-link" to="/edit-courses">Edit Courses</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/edit-blogs">Edit Blogs</Link>
-        </li>
-        </>)
-        }
         <li className="nav-item">
           <Link className="nav-link" to="/contact">Contact</Link>
         </li>

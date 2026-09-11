@@ -1,4 +1,3 @@
-import Navbar from '../Components/AfterLoginNavbar.jsx'
 import {useEffect,useState} from 'react'
 import services from '../Services/service.jsx'
 import { useNavigate } from 'react-router-dom';
@@ -33,7 +32,6 @@ function ExploreCourses() {
   
   return (
     <>
-      <Navbar needDashboard={true}/>
       <section className="pt-5">
          <h3 className="text-primary text-center">Edit Courses</h3>
 
