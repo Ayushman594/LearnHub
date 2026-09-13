@@ -1,0 +1,18 @@
+.terms{
+    padding:20px 20px;
+}
+h2{
+    font-size:25px;
+}
+.terms h3{
+    font-size:20px;
+}
+
+@media screen and (max-width:1300px){
+    .terms p{
+        text-align: justify;
+    }
+    .terms{
+        height:fit-content;
+    }
+}

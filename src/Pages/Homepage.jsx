@@ -1,6 +1,6 @@
 import { Link,useNavigate } from 'react-router-dom'
 import Navbar from '../Components/Navbar.jsx'
-
+import './Page styles/Homepage.css'
 const reasonsList = [
     {
       "logo": "src/Images/IndustryExpert.png",
@@ -83,20 +83,20 @@ function Homepage() {
   return (
     <>
         <Navbar isLogin={false} />
-        <section className="main-section">
+        <section className="main-section d-flex flex-column align-items-center">
           <h1 className="text-primary">Welcome to LearnHub</h1>
           <p className="fs-5">Your journey to learning starts here!</p>
         </section>
 
-        <section className="whyLearnhub">
+        <section className="whyLearnhub p-5">
           <h2 className="text-center text-primary">Why LearnHub ?</h2>
-          <div className="Reasonstoconnect">
+          <div className="Reasonstoconnect d-flex justify-content-around">
               {
                  reasonsList.map((reason)=>{
                   return (
                      <div className="Reason-container">
                       <div>
-                        <img src={reason.logo} alt="logo" />
+                        <img src={reason.logo} className="mx-auto" alt="logo" />
                      </div>
                       <h4>{reason.why}</h4>
                      </div>
@@ -105,13 +105,13 @@ function Homepage() {
               }
           </div>
         </section>
-        <section className="courses-section">
-          <h2 className="text-primary">Explore Our Courses</h2>
-          <div className="courses-container d-flex justify-content-around">
+        <section className="courses-section p-5">
+          <h2 className="text-primary text-center">Explore Our Courses</h2>
+          <div className="courses-container d-flex  mt-5 justify-content-around">
           {coursesList.map((course)=>{
                return (
-                <div className="course-card">
-              <img src={course.imagesrc} alt="Web Development" />
+                <div className="course-card border border-dark rounded p-3 px-auto">
+              <img src={course.imagesrc}  alt="Web Development" />
               <h3>{course.title}</h3>
               <p>{course.description}</p>
               <button className="btn btn-primary p-2 mt-2" onClick={() => navigate('/view-details', { state: { courseImage: course.imagesrc, courseName: course.title, courseDescription: course.description } })}>
@@ -124,15 +124,15 @@ function Homepage() {
           </div>
         </section>
 
-        <section className="Our-Blogs">
+        <section className="Our-Blogs p-5">
             <h2 className="text-primary text-center">Our Blogs</h2>
            <div className="Blog-container mt-5 justify-content-around">
               {
                 BlogList.map((Blog)=>{
                   return (
-                    <div className="Blog-card mt-4">
+                    <div className="Blog-card mt-1">
               <img src={Blog.blogimg} alt="Blogimage" />
-              <h5>{Blog.uploaddate}</h5>
+              <h5 className="mt-2">{Blog.uploaddate}</h5>
               <h3>{Blog.blogtitle}</h3>
               <p>{Blog.blogdescription}</p>
               <button className="btn btn-primary p-2 mt-2" onClick={() => navigate('/read-blogs', { state: { blogImage: Blog.blogimg, blogDate: Blog.uploaddate, blogTitle: Blog.blogtitle, blogDescription: Blog.blogdescription } })}>
@@ -144,19 +144,19 @@ function Homepage() {
               }
            </div>
         </section>
-        <section className="Newsletter">
+        <section className="Newsletter p-5">
            <h3 className="fs-2 text-primary"> Newsletter</h3>
           <p className="pb-2 pt-2">Get latest updates of LearnHub</p>
           <input type="email" className="rounded p-2 d-inline form-control w-25" placeholder='Enter your Email' />
           <button className="btn btn-primary p-2 ms-1">Submit</button>
         </section>
 
-        <footer className="d-flex flex-column">
+        <footer className="d-flex flex-column p-5">
         <section className="container">
           <div className="row">
             <div className="col">
             <h3 className="text-primary">LearnHub</h3>
-            <p className="text-light mt-1 w-75">LearnHub is an online learning platform which offers various courses for Students. It is designed to help learners build in demand skills through structured courses.</p>
+            <p className="text-light description mt-1 w-75">LearnHub is an online learning platform which offers various courses for Students. It is designed to help learners build in demand skills through structured courses.</p>
             </div>
             <div className="col">
               <h4 className="text-light">Explore</h4>

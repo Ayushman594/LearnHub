@@ -1,5 +1,5 @@
 import Navbar from "../Components/Navbar"
-
+import './Page styles/Terms.css'
 function Terms() {
   return (
     <>

@@ -1,8 +1,10 @@
 import Navbar from "../Components/Navbar";
 import service from "../Services/service.jsx";
 import { useForm } from "react-hook-form";
-
+import { useState } from 'react';
 function Registrationform() {
+  const [toggle,setToggle]=useState(false);
+  const [toggleconfirm,setToggleconfirm]=useState(false);
   const {
     register,
     handleSubmit,
@@ -27,10 +29,11 @@ function Registrationform() {
         <div className="registration">
           <h2 className="text-primary"> Registration </h2>
           <form onSubmit={handleSubmit(sendData)}>
-            <div className="d-flex flex-column gap-2">
+            <div className="d-flex flex-column mb-3 gap-2">
               <label htmlFor="name">Name:</label>
               <input
                 id="name"
+                className="form-control"
                 {...register("user_name", {
                   required: "Name is Required",
                   pattern: {
@@ -46,7 +49,7 @@ function Registrationform() {
               ""
             )}
             </div>
-            <div className="d-flex flex-column gap-2">
+            <div className="d-flex flex-column mb-3 gap-2">
               <label htmlFor="email">Email:</label>
              <input
               id="email"
@@ -67,22 +70,29 @@ function Registrationform() {
               ""
             )}
             </div>
-            <div className="d-flex flex-column gap-2">
+            <div className="d-flex flex-column mb-3 gap-2">
               <label htmlFor="password">Password:</label>
+              <div className="d-flex">
               <input
-                type="password"
+                type={toggle?"text":"password"}
                 id="password"
                 className="form-control"
                 name="password"
                 {...register("password",{required:"This field is mandatory",minLength: {
          value: 6, message: "Password must be at least 6 characters"}})} />
+         <button type="button" onClick={()=>setToggle(!toggle)}>{toggle?'👁️':'⌣'}</button>
+         </div>
          {errors.password?<div style={{color:"red"}}>{errors.password.message}</div>:""}
 
             </div>
-            <div className="d-flex flex-column gap-2">
+            <div className="d-flex flex-column mb-3 gap-2">
               <label htmlFor="confirm-password">Confirm Password:</label>
-               <input type="password" id="confirm-password" className="form-control" {...register("confirm_password",{required:"This field is mandatory",validate:(value, formValues) => value === formValues.password || "Passwords do not match" })} />
+              <div className="d-flex">
+               <input type={toggleconfirm?"text":"password"} id="confirm-password" className="form-control" {...register("confirm_password",{required:"This field is mandatory",validate:(value, formValues) => value === formValues.password || "Passwords do not match" })} />
+               <button type="button" onClick={()=>setToggleconfirm(!toggleconfirm)}>{toggleconfirm?'👁️':'⌣'}</button>
+               </div>
             {errors.confirm_password?<div style={{color:"red"}}>{errors.confirm_password.message}</div>:""}
+
             </div>
             <button type="submit" className="btn btn-primary p-2 mt-2">
               Register

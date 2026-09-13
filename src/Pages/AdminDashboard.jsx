@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import services from "../Services/service";
 import AdminSidebar from "../Components/AdminSidebar";
-
+import './Page styles/Admin-dashboard.css';
 const CoursesList=[
     {
         "courseName":"Web Development",

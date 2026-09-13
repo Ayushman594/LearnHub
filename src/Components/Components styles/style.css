@@ -1,0 +1,235 @@
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 280px;
+    min-height: 100vh;
+
+    background-color: black;
+    color: white;
+
+    flex-shrink: 0;
+}
+
+
+/* Logo */
+
+.sidebar .logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+
+/* LearnHub title */
+
+.sidebar .title {
+    font-size: 24px;
+}
+
+
+/* VERY IMPORTANT:
+   Bootstrap navbar-collapse is causing
+   the menu to be centered */
+
+.sidebar .navbar-collapse {
+    width: 100% !important;
+    align-items: stretch !important;
+}
+
+
+/* Navigation list */
+
+.sidebar .navbar-nav {
+    width: 100% !important;
+    padding: 0 15px;
+    margin: 0;
+}
+
+
+/* List items */
+
+.sidebar .nav-item {
+    width: 100%;
+}
+
+
+/* Links */
+
+.sidebar .nav-link {
+    width: 100% !important;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    padding: 12px 15px;
+
+    color: white !important;
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+
+/* Hover */
+
+.sidebar .nav-link:hover {
+    background-color: #343a40;
+}
+
+
+/* Active */
+
+.sidebar .nav-link.active {
+    border-left: 5px solid blue;
+    background-color: rgb(255, 248, 248);
+    color: black !important;
+}
+
+
+/* Logout */
+
+.sidebar .btn {
+    width: 100%;
+}
+
+
+/* =========================
+   COLLAPSED
+========================= */
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar.collapsed .title {
+    display: none;
+}
+
+.sidebar.collapsed .navbar-nav {
+    padding: 0 10px;
+}
+
+.sidebar.collapsed .nav-link {
+    justify-content: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* =========================
+   COLLAPSE BUTTON
+========================= */
+
+.collapse-btn {
+    position: absolute;
+
+    top: 25px;
+    right: -15px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    border: 1px solid white;
+
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    z-index: 100;
+}
+
+.collapse-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-links {
+  position: relative;
+  left: 65%;
+  padding-top: 5px;
+}
+.nav-btns {
+  position: relative;
+  left: 67%;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-links {
+    position: relative !important;
+    left: 5%;
+    padding-top: 5px;
+  }
+  .nav-btns {
+    position: relative !important;
+    left: 5%;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 501px) {
+  .nav-links {
+    position: relative !important;
+    left: 5%;
+    padding-top: 5px;
+  }
+  .nav-btns {
+    position: relative !important;
+    left: 5%;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 991.8px) and (min-width: 701px) {
+  .nav-links {
+    position: relative !important;
+    left: 3%;
+    padding-top: 5px;
+  }
+  .nav-btns {
+    position: relative !important;
+    left: 3%;
+  }
+  .navbar-nav {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 991.9px) {
+  .nav-links {
+    position: relative;
+    left: 47%;
+    padding-top: 5px;
+  }
+  .nav-btns {
+    position: relative;
+    left: 49%;
+  }
+}
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+  .nav-links {
+    position: relative;
+    left: 58%;
+    padding-top: 5px;
+  }
+  .nav-btns {
+    position: relative;
+    left: 60%;
+  }
+}

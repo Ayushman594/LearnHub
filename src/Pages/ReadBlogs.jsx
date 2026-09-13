@@ -2,7 +2,7 @@ import Navbar from '../Components/Navbar'
 
 import {useLocation} from 'react-router-dom'
 import {useState,useEffect} from 'react'
-
+import './Page styles/ReadBlogs.css'
 const DeveloperPortfolio=[
     {
       "id": "1",

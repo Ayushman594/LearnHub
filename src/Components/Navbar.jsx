@@ -1,6 +1,7 @@
 import logo from '../assets/Booklogo.png'
 import {Link} from 'react-router-dom'
 import {useNavigate} from 'react-router-dom'
+import './Components styles/style.css'
 const Navbar = (props) => {
   const navigate=useNavigate();
   return (
@@ -20,16 +21,6 @@ const Navbar = (props) => {
         <li className="nav-item">
           <Link className="nav-link" to="/about">About</Link>
         </li>
-        { props.isLogin && props.isUser && (
-        <>  
-          <li className="nav-item">
-          <Link className="nav-link" to="/courses">Explore Courses</Link>
-        </li>
-        <li className="nav-item">
-          <Link className="nav-link" to="/blog">Blog</Link>
-        </li>
-        </>)
-        }
         <li className="nav-item">
           <Link className="nav-link" to="/contact">Contact</Link>
         </li>

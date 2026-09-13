@@ -1,10 +1,14 @@
 import Navbar from "../Components/Navbar"
 import {useState} from "react"
 import { useLocation } from "react-router-dom"
+import './Page styles/viewdetails.css'
+
 function ViewDetails() {
     const location=useLocation();
     const [moredetails,setMoreDetails]=useState([]);
     const [pricedetails,setPriceDetails]=useState([]);
+    const [showdetails,setShowdetails]=useState(true);
+
     function handleMoreDetails() {
         if(location.state.courseName==="Web Development") {
             setMoreDetails([
@@ -47,7 +51,14 @@ function ViewDetails() {
                 "Advanced Mobile App Development Course: ₹799",
             ]);
         }
+
+        setShowdetails(!showdetails);
+        if(showdetails==false){
+            setMoreDetails("");
+            setPriceDetails("");
+        }
     }
+
   return (
     <>
       <Navbar />
@@ -75,12 +86,13 @@ function ViewDetails() {
                     <ul>
                         {pricedetails.map((price,index)=>(
                             <li key={index}>{price}</li>
+                            
                         ))}
                     </ul>
+                    <p className="fw-bold fs-5">Register,login and Enroll now to start your learning journey!</p>
                 </div>
             )}
-            <p className="fw-bold fs-5">Register,login and Enroll now to start your learning journey!</p>
-            <button className="btn btn-primary p-2 mt-2" onClick={handleMoreDetails}>view description</button>
+            <button className="btn btn-primary p-2 mt-2" onClick={handleMoreDetails}>{showdetails?"View details":"Hide details"}</button>
           </div>
       </section>
 

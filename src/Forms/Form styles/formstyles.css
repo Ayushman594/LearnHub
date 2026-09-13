@@ -1,0 +1,75 @@
+.login-section,.contact-section,.registration-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+.login-section #password,.registration-section #password , .registration-section #confirm-password{
+    width:65% !important;
+}
+.login-section button[type="button"],.registration-section button[type="button"]{
+    width:10%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.contact-section,.registration-section{
+    padding-top: 40px;
+}
+.login h2,.contact h2,.registration h2{
+   font-size:25px;
+   margin-bottom:20px;
+}
+.login,.contact,.registration{
+    width:30vw;
+    border:2px solid rgb(173, 173, 173);
+    border-radius:13px;
+    padding:25px 25px;
+}
+@media screen and (max-width:500px){
+    .contact-section,.registration-section{
+        height:fit-content;
+    }
+    .login-section{
+        height:90vh;
+        align-items: center;
+    }
+    .login,.contact,.registration{
+        width:90vw;
+    }
+}
+@media screen and (max-width:700px) and (min-width:501px){
+    .contact-section,.registration-section{
+        height:fit-content;
+    }
+     .login-section{
+        height:90vh;
+        align-items: center;
+    }
+    .login,.contact,.registration{
+        width:80vw;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:701px){
+    .contact-section,.registration-section{
+        height:fit-content;
+    }
+     .login-section{
+        height:90vh;
+        align-items: center;
+    }
+    .login,.contact,.registration{
+        width:60vw;
+    }
+}
+@media screen and (max-width:1300px) and (min-width:1001px){
+     .contact-section,.registration-section{
+        height:fit-content;
+    }
+     .login-section{
+        height:90vh;
+        align-items: center;
+    }
+    .login,.contact,.registration{
+        width:40vw;
+    }
+}

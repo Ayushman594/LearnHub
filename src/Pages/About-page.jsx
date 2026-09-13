@@ -1,11 +1,11 @@
 import Navbar from "../Components/Navbar";
-
+import './Page styles/Aboutpage.css'
 const AboutPage = () => {
     return (
         <>
             <Navbar />
            <section className="about-section">
-            <div className="about">
+            <div className="about border border-dark rounded p-4">
                 <h2 className="text-primary"><img className="logo" src="src/assets/Booklogo.png" alt="LearnHub Logo" /> About LearnHub </h2> 
                 <hr></hr>
                 <p>LearnHub is an online learning platform that offers a wide range of courses and resources to help individuals enhance their skills and knowledge. Our mission is to provide accessible and high-quality education to learners worldwide.</p>
