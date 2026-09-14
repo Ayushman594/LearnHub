@@ -10,6 +10,7 @@ function Registrationform() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+  
   const sendData = async (data) => {
      const receivedData={
       "user_name":data.user_name,

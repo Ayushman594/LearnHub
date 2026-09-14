@@ -28,9 +28,9 @@ function ViewLearners() {
     <>
       <section className="d-flex">
         <AdminSidebar/>
-        <div className=" main-content">
+        <div className=" main-content ">
           <h5 className="text-center text-primary fs-3">View Learners</h5>
-          <table className="mx-auto mt-4">
+          <table className="mx-auto flex-shrink table-responsive mt-4">
               <thead>
                   <tr className="bg-dark text-light">
                     <th className="p-3">Learner Name</th>

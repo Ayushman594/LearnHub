@@ -1,6 +1,7 @@
-
+import AdminSidebar from "../Components/AdminSidebar";
 import { useForm } from "react-hook-form";
 import services from "../Services/service";
+import './Form styles/formstyles.css'
 import { useState, useEffect } from "react";
 function AddTeachers() {
   const {
@@ -34,17 +35,21 @@ function AddTeachers() {
 
   return (
     <>
-      <section className="pt-5 d-flex flex-column">
+    
+      <section className="d-flex">
+        <AdminSidebar/>
+        <div className="p-3 teacher-section">
         <h5 className="text-center fs-3 text-primary">Add Teachers info</h5>
 
         <form
-          className="border border-dark rounded p-4 mt-3 w-50 mx-auto"
+          className="border addteachers border-dark rounded p-4 mt-3 mx-auto"
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className="d-flex flex-column mb-3">
             <label htmlFor="id">Enter Teacher's ID</label>
             <input
-              id="teacherId"
+              id="id"
+              className="form-control"
               placeholder="e.g. T001"
               {...register("teacherId", {
                 required: "Teacher ID is required",
@@ -55,6 +60,7 @@ function AddTeachers() {
             <label htmlFor="name">Enter Teacher's Name</label>
             <input
               id="name"
+              className="form-control"
               {...register("name", {
                 required: "Name is Required",
                 pattern: {
@@ -99,6 +105,7 @@ function AddTeachers() {
             <input
               type="text"
               id="specialization"
+              className="form-control"
               placeholder="e.g Experience and Subject they are good at teaching"
               {...register("message", { required: "This field is required" })}
             />
@@ -107,35 +114,39 @@ function AddTeachers() {
             Submit
           </button>
         </form>
-      </section>
-      <section className="p-4 ">
-        <table className="border w-50 mx-auto border-dark">
-          <thead>
-            <tr className="bg-dark text-light">
-              <th className="p-3">ID</th>
-              <th className="p-3">Name</th>
-              <th className="p-3">Email</th>
-              <th className="p-3">Specialization</th>
-              <th></th>
-            </tr>
-          </thead>
 
-          <tbody>
-            {state.map((li) => {
-              return (
-                <tr key={li.id}>
-                  <td className="border border-dark ps-2 p-3">{li.teacherId}</td>
-                  <td className="border border-dark ps-2">{li.name}</td>
-                  <td className="border border-dark ps-2">{li.email}</td>
-                  <td className="border border-dark ps-2">{li.message}</td>
-                  <td className="border border-dark ps-2 pe-2 "><button className="btn btn-danger p-2" onClick={()=>handleDelete(li.id)}>Delete</button></td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </section>
-    </>
+        <section className="table-responsive">
+      <table className="border  mx-auto border-dark">
+        <thead>
+          <tr className="bg-dark text-light">
+            <th className="p-3">ID</th>
+            <th className="p-3">Name</th>
+            <th className="p-3">Email</th>
+            <th className="p-3">Specialization</th>
+            <th></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {state.map((li) => {
+            return (
+              <tr key={li.id}>
+                <td className="border border-dark ps-2 p-3">{li.teacherId}</td>
+                <td className="border border-dark ps-2">{li.name}</td>
+                <td className="border border-dark ps-2">{li.email}</td>
+                <td className="border border-dark ps-2">{li.message}</td>
+                <td className="border border-dark ps-2 pe-2 "><button className="btn btn-danger p-2" onClick={()=>handleDelete(li.id)}>Delete</button></td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </section>
+      </div>
+    </section>
+
+    
+  </>
   );
 }
 

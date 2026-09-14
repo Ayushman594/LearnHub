@@ -1,7 +1,7 @@
 import {useEffect,useState} from 'react'
 import services from '../Services/service.jsx'
 import { useNavigate } from 'react-router-dom';
-
+import './Page styles/Explore-courses.css'
 import AdminSidebar from '../Components/AdminSidebar.jsx';
 
 function ExploreCourses() {
@@ -36,15 +36,15 @@ function ExploreCourses() {
     <>
       <section className="d-flex">
          <AdminSidebar/>
-         <div className="ps-3 pt-5">
+         <div className="w-100 pt-5">
          <h3 className="text-primary text-center">Edit Courses</h3>
 
-         <div className="d-flex justify-content-between">
+         <div className="d-flex searchaddcontainer justify-content-between w-100">
             <input type="search" placeholder='search courses' onChange={(e)=>{
                searchData(e.target.value,"CoursesList","coursetitle")
-            }} className="mt-4 ms-5 p-2 w-25 form-control"/>
+            }} className="mt-4 ms-5 p-2  form-control"/>
 
-            <button className="btn btn-primary mt-4 me-5 p-2 h-25" onClick={()=>Navigate("/add-course")}> + Add New Course</button>
+            <button className="btn addcoursebtn btn-primary mt-4 me-5 p-2" onClick={()=>Navigate("/add-course")}> + Add New Course</button>
          </div>
          <div className="mt-4 allcoursescontainer">
             {courseData.map((data)=>{

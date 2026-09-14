@@ -1,9 +1,34 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import logo from "../assets/Booklogowithoutbg.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 function AdminSidebar() {
   const navigate = useNavigate();
   const [collapsed, setCollapsed] = useState(false);
+
+useEffect(() => {
+
+    const handleResize = () => {
+
+        if (window.innerWidth <= 768) {
+            setCollapsed(true);
+        } else {
+            setCollapsed(false);
+        }
+
+    };
+
+    // Check when component first loads
+    handleResize();
+
+    // Check whenever screen size changes
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => {
+        window.removeEventListener("resize", handleResize);
+    };
+
+}, []);
   return (
     <section className={`sidebar ${collapsed ? "collapsed" : ""}`}>
       {" "}

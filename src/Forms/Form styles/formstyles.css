@@ -1,75 +1,164 @@
-.login-section,.contact-section,.registration-section{
-    display:flex;
-    justify-content: center;
+.login-section,
+.contact-section,
+.registration-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.table-responsive {
+  margin-top: 20px;
+}
+.addcourse-section .form-control {
+  margin-top: 10px;
+}
+.addcourse-section form {
+  width: 30%;
+}
+.addteachers {
+  width: 50%;
+}
+.addteachers input {
+  margin-top: 10px;
+}
+.teacher-section {
+  flex: 1 1 auto;
+  min-width: 0;
+  width: 0;
+  padding: 30px !important;
+}
+.teacher-table {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.teacher-table table {
+  width: 100%;
+  min-width: 700px;
+}
+.login-section #password,
+.registration-section #password,
+.registration-section #confirm-password {
+  width: 65% !important;
+}
+.login-section button[type="button"],
+.registration-section button[type="button"] {
+  width: 10%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.contact-section,
+.registration-section {
+  padding-top: 40px;
+}
+.login h2,
+.contact h2,
+.registration h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.login,
+.contact,
+.registration {
+  width: 30vw;
+  border: 2px solid rgb(173, 173, 173);
+  border-radius: 13px;
+  padding: 25px 25px;
+}
+@media screen and (max-width: 500px) {
+  .addteachers {
+    width: 90% !important;
+    margin-right: 20px !important;
+  }
+  .addcourse-section form {
+    width: 80%;
+  }
+  .table-responsive {
+    margin-top: 20px;
+  }
+  .contact-section,
+  .registration-section {
+    height: fit-content;
+  }
+  .login-section {
+    height: 90vh;
     align-items: center;
-    height:70vh;
+  }
+  .login,
+  .contact,
+  .registration {
+    width: 90vw;
+  }
 }
-.login-section #password,.registration-section #password , .registration-section #confirm-password{
-    width:65% !important;
+@media screen and (max-width: 700px) and (min-width: 501px) {
+  .addteachers {
+    width: 90% !important;
+    margin-right: 20px !important;
+  }
+  .addcourse-section form {
+    width: 80%;
+  }
+  .table-responsive {
+    margin-top: 20px;
+  }
+  .contact-section,
+  .registration-section {
+    height: fit-content;
+  }
+  .login-section {
+    height: 90vh;
+    align-items: center;
+  }
+  .login,
+  .contact,
+  .registration {
+    width: 80vw;
+  }
 }
-.login-section button[type="button"],.registration-section button[type="button"]{
-    width:10%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .addteachers {
+    width: 80% !important;
+    margin-right: 20px !important;
+  }
+  .addcourse-section form {
+    width: 70%;
+  }
+  .table-responsive {
+    margin-top: 20px;
+  }
+  .contact-section,
+  .registration-section {
+    height: fit-content;
+  }
+  .login-section {
+    height: 90vh;
+    align-items: center;
+  }
+  .login,
+  .contact,
+  .registration {
+    width: 60vw;
+  }
 }
-.contact-section,.registration-section{
-    padding-top: 40px;
-}
-.login h2,.contact h2,.registration h2{
-   font-size:25px;
-   margin-bottom:20px;
-}
-.login,.contact,.registration{
-    width:30vw;
-    border:2px solid rgb(173, 173, 173);
-    border-radius:13px;
-    padding:25px 25px;
-}
-@media screen and (max-width:500px){
-    .contact-section,.registration-section{
-        height:fit-content;
-    }
-    .login-section{
-        height:90vh;
-        align-items: center;
-    }
-    .login,.contact,.registration{
-        width:90vw;
-    }
-}
-@media screen and (max-width:700px) and (min-width:501px){
-    .contact-section,.registration-section{
-        height:fit-content;
-    }
-     .login-section{
-        height:90vh;
-        align-items: center;
-    }
-    .login,.contact,.registration{
-        width:80vw;
-    }
-}
-@media screen and (max-width:1000px) and (min-width:701px){
-    .contact-section,.registration-section{
-        height:fit-content;
-    }
-     .login-section{
-        height:90vh;
-        align-items: center;
-    }
-    .login,.contact,.registration{
-        width:60vw;
-    }
-}
-@media screen and (max-width:1300px) and (min-width:1001px){
-     .contact-section,.registration-section{
-        height:fit-content;
-    }
-     .login-section{
-        height:90vh;
-        align-items: center;
-    }
-    .login,.contact,.registration{
-        width:40vw;
-    }
+@media screen and (max-width: 1300px) and (min-width: 1001px) {
+  .table-responsive {
+    margin-top: 20px;
+  }
+  .addcourse-section form {
+    width: 40%;
+  }
+  .contact-section,
+  .registration-section {
+    height: fit-content;
+  }
+  .login-section {
+    height: 90vh;
+    align-items: center;
+  }
+  .login,
+  .contact,
+  .registration {
+    width: 40vw;
+  }
 }
