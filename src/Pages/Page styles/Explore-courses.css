@@ -6,7 +6,26 @@ input[type="search"]{
     height:50px;
     width:14%;
 }
-
+.allcoursescontainer{
+    display:grid;
+    grid-template-columns: 30vw 30vw;
+    justify-content: center;
+}
+.course-card{
+    height:fit-content;
+    padding-bottom: 20px;
+}
+.course-card button{
+    width:30%;
+    height:50px;
+}
+.course-card h3{
+    font-size: 25px;
+}
+.course-card p{
+    padding:20px;
+    text-align: justify;
+}
 @media screen and (max-width:430px){
     .searchaddcontainer{
         flex-direction: column;

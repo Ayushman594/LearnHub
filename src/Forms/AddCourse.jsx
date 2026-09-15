@@ -7,11 +7,12 @@ function AddCourse() {
   const {register, handleSubmit,formState:{errors}}=useForm();
   
   const sendData=async(data)=>{
-      const response=await services.addData("CoursesList",data);
+      const response=await services.addData("Courses",data);
       if(response){
          alert("Course Successfully added");
       }
   }
+  
   return (
     <>
      <section className="pt-4 addcourse-section">
@@ -21,14 +22,14 @@ function AddCourse() {
             <h3 className="text-primary text-center">Add New Course</h3>
             <div className="d-flex flex-column mb-3 mt-4">
              <label htmlFor="image-url">Image URL:</label>
-             <input className="form-control" {...register("courseImg",{"required":"This field is mandatory"})} />
+             <input className="form-control" name="Course_img" {...register("Course_img",{"required":"This field is mandatory"})} />
              {errors.url && (
                 <p className="text-danger">{errors.url.required}</p>
              )}
             </div>
             <div className="d-flex flex-column mb-3">
                 <label htmlFor="name">Enter Course Name:</label>
-                <input className="form-control" {...register("coursetitle", {
+                <input className="form-control" name="courseName" {...register("courseName", {
                 required: "Name is Required",
                 pattern: {
                   value: /^[A-Za-z]+(?:\s[A-Za-z]+)*$/,
@@ -41,20 +42,20 @@ function AddCourse() {
             </div>
             <div className="d-flex flex-column mb-3">
                 <label htmlFor="description">Describe course:</label>
-                <textarea className="form-control" name="description" id="description" rows="3" cols="4" {...register("description",{"required":"This field is mandatory"})}></textarea>
+                <textarea className="form-control" name="Course_desc" id="description" rows="3" cols="4" {...register("Course_desc",{"required":"This field is mandatory"})}></textarea>
                 {errors.description && (
                 <p className="text-danger">{errors.description.required}</p>
              )}
             </div>
             <div className="d-flex flex-column mb-3">
                 <label htmlFor="fee">Fee</label>
-                <input className="form-control" {...register("fee",{"required":"This field is mandatory"})} />
+                <input className="form-control" name="fees"  {...register("fees",{"required":"This field is mandatory"})} />
                 {errors.fee && (
                 <p className="text-danger">{errors.fee.required}</p>
              )}
             </div>
 
-            <button className="btn btn-success">Add Course</button>
+            <button type="submit" className="btn btn-success">Add Course</button>
          </form>
      </section>
     </>
